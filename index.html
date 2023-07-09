@@ -1,0 +1,575 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Spoorthi's Portfolio</title>
+</head>
+<style>
+body {
+	background: url(data:image/jpeg;base64,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);
+  background-repeat: repeat;
+  background-size: 1520px 750px;
+    }
+    
+    </style>
+	<!--Header(start)-->
+	<table id="header" border="0" width="100%" cellpadding="0" cellspacing="0" bgcolor="">
+		<tr>
+			<td>
+				<table border="0" cellpadding="15" cellspacing="0" width="90%" align="center">
+					<tr>
+						<td>
+<img src="./Picsart_23-07-08_19-18-24-833.png" alt="LOGO"> <br>
+
+						</td>
+
+						<td>
+							<font face="montserrat" size="6" color="white">
+								<b>HI ! <br>I'M</b>
+								<b>   Spoorthi </b>
+
+
+
+							</font>
+						</td>
+
+						<td width="15%">
+
+						</td>
+
+						<td>
+							<a href="#home" style="text-decoration:none">
+								<font face="verdana" size="4" color=white>
+									Home
+								</font>
+							</a>
+						</td>
+
+						<td>
+							|
+						</td>
+
+						<td>
+							<a href="#about" style="text-decoration:none">
+								<font face="Verdana" size="4" color=white>
+									About
+								</font>
+							</a>
+						</td>
+
+						<td>
+							|
+						</td>
+
+						<td>
+							<a href="#projects" style="text-decoration:none">
+								<font face="Verdana" size="4" color=white>
+									Projects
+								</font>
+							</a>
+						</td>
+
+						<td>
+							|
+						</td>
+
+						<td>
+							<a href="#achievements" style="text-decoration:none">
+								<font face="Verdana" size="4" color=white>
+									Achievements
+								</font>
+							</a>
+						</td>
+
+						<td>
+							|
+						</td>
+
+						<td>
+							<a href="#contact" style="text-decoration:none">
+								<font face="Verdana" size="4" color=white>
+									Contact
+								</font>
+							</a>
+						</td>
+					</tr>
+				</table>
+			</td>
+		</tr>
+	</table>
+	<!--Header(end)-->
+
+	<!--Home(start)-->
+	<table id="home" border="1" width="100%" cellpadding="20" cellspacing="0" bgcolor="">
+
+
+		<tr>
+			<td>
+				<table border="0" cellpadding="5" cellspacing="0" width="90%" align="center">
+					<tr>
+						<td align="center" valign="middle">
+							<h3>
+								<font face="Times New Roman" size="5" color="white">
+									I AM A PROFFESIONAL
+									WEB DEVELOPER !
+								</font>
+							</h3>
+
+							<h2>
+								<font face="Verdana" size="6" color="gray">
+									<!-- Freelance Programmer -->
+								</font>
+							</h2>
+						</td>
+					</tr>
+				</table>
+			</td>
+		</tr>
+	</table>
+	<!--Home(end)-->
+
+
+	<!--About(start)-->
+	<table id="about" border="0" width="100%" cellpadding="0" cellspacing="0" bgcolor="">
+		<tr>
+			<td>
+				<table border="0" cellpadding="15" cellspacing="0" width="80%" align="center">
+					<tr>
+						<td height="180" align="center" valign="middle" colspan="2">
+							<font face="Verdana" size="6" color="white">
+								About Me
+							</font>
+							<hr color="#216974" width="90">
+						</td>
+					</tr>
+
+					<tr>
+						<td width="40%">
+
+							
+
+
+						</td>
+
+						<td width="40%">
+							<font face="Verdana" size="4" color="white">
+								Hey there! 
+
+								My name is [Spoorthi], and I am a passionate web designer with [ II] years of experience. I have always been fascinated by the digital world and its ability to connect people from all over the globe.</pre>
+								<hr color="gray">
+
+								I specialize in creating user-friendly, visually appealing websites that capture the essence of each client's brand. I believe that a well-designed website can make a significant impact on a business's online presence and success.</pre>
+
+								<hr color="gray">
+
+								In addition to designing websites, I also possess a strong understanding of search engine optimization (SEO) principles. I incorporate SEO techniques into my designs to enhance the visibility and ranking of websites on search engines like Google, ultimately driving more organic traffic to the site.</pre>
+
+								<hr color="gray">
+
+								Feel free to explore my portfolio and get in touch with me if you are interested in collaborating on your next web design project. Let's create something amazing together!</pre>
+								<hr color="gray">
+
+								<br>
+								<b< /b>
+							</font>
+						</td>
+					</tr>
+				</table>
+
+				<hr color="white">
+			</td>
+		</tr>
+	</table>
+	<!--About(end)-->
+
+	
+		<!--Projects(start)-->
+        <br>
+        <br>
+        <br>
+        <br>
+		<table id="projects" border="3.5" width="100%" cellpadding="0" cellspacing="0" bgcolor="">
+			<tr>
+				<td>
+					<table border="0" cellpadding="5" cellspacing="0" width="80%" align="center">
+						<tr>
+							<td height="150" align="center" valign="middle" colspan="2">
+								<font face="Verdana" size="7" color=" white">
+									
+                                                   Projects <border= "2">
+								</font>
+								<hr color="gray" width="90">
+							</td>
+						</tr>
+
+						<tr>
+							<td height="10">
+								<font face="Times New Roman" size="5" color="white">
+									<ul>
+										<li>
+											BMI Calculator
+											<a href="https://www.calculator.net/bmi-calculator.html"target=" blank1" style="text-decoration:none">
+												➲
+											</a>
+
+										<li>
+											<hr color="gray">
+											Calculator
+											<a href="https://www.calculatorsoup.com/calculators/math/basic.php" target=" blank2" style="text-decoration:none" color="white">
+												➲
+											</a>
+										</li>
+										
+
+										<li>
+											<hr color="gray">
+											Contact Saver
+											<a href="https://www.sciencedirect.com/topics/computer-science/contact-server"target=" blank3"  style="text-decoration:none">
+												➲
+											</a>
+										</li>
+
+										<li>
+											<hr color="gray">
+											Daily Quiz
+											<a href="https://www.nine.com.au/quizzical"target=" blank4"  style="text-decoration:none">
+												➲
+											</a>
+
+										</li>
+
+
+
+										<li>
+											<hr color="gray">
+											Random Password Generator
+											<a href="https://www.avast.com/en-in/random-password-generator#pc"target=" blank5"  style="text-decoration:none">
+												➲
+											</a>
+										</li>
+
+										<li>
+											<hr color="gray">
+											Stone Paper Scissor
+											<a href="https://rockpaperscissors-ai.vercel.app/"target=" blank6"  style="text-decoration:none">
+												➲
+											</a>
+
+										</li>
+                                            <hr color="gray"> 
+									</ul>
+									        
+					
+
+					</font>
+				</td>
+
+				<td width="45%">
+					
+				</td>
+			</tr>
+		</table>
+		</td>
+		</tr>
+	</table>
+	<!--Projects(end)-->
+
+	<!--Achievement(start)-->
+	<table id="achievements" border="2" width="100%" cellpadding="0" cellspacing="0" bgcolor="">
+		<tr>
+			<td>
+				<table border="0" cellpadding="15" cellspacing="0" width="80%" align="center">
+					<tr>
+						<td height="180" align="center" valign="middle">
+							<font face="Verdana" size="7" color="white">
+								Achievements
+								<hr color="gray" width="100">
+							</font>
+						</td>
+					</tr>
+
+					<tr>
+						<td>
+							<font face="Verdana" size="4" color="white">
+								<ul>
+									<li>
+										<b>Intern at TASK</b>
+										<ul>
+											<li>
+												June,2023 - Present.
+											</li>
+											<li>
+												Learning Web-desining And Developing Eco-Friendly Websites.
+											</li>
+										</ul>
+									</li>
+
+									<li>
+										
+										<hr color="gray">
+										<b>Active Club Member Of Internet Of Things Club(IOT).</b>
+										<ul>
+											<li>
+												June,2023 - Present.
+											</li>
+											<li>
+												Conducted events and workshops on
+												different technologies.
+											</li>
+										</ul>
+									</li>
+
+									<li>
+										
+										<hr color="gray">
+										<b>Intern At 1STOP.ai</b>
+										<ul>
+											<li>
+												November,2022.
+											</li>
+											<li>
+												Selected From 1stop as Intern
+												And Excelled The "Python".
+											</li>
+											
+											<hr color="gray">
+										</ul>
+									</li>
+
+								</ul>
+
+							</font>
+						</td>
+					</tr>
+				</table>
+			</td>
+		</tr>
+	</table>
+	<!--Achievement(end)-->
+
+
+	<!--Contact(start)-->
+	<table id="contact" border="2" width="100%" cellpadding="0" cellspacing="0" color="white"  bgcolor="">
+		<tr>
+			<td>
+				<table border="0" cellpadding="15" cellspacing="0" width="80%" align="center">
+					<tr>
+						<td height="180" align="center" valign="middle" colspan="2">
+							<font face="Verdana" size="7" color="white">
+								Contact
+							</font>
+							<hr color="gray" width="90">
+						</td>
+					</tr>
+
+					<tr>
+						<td align="center" valign="top">
+							<table border="0" width="50%" cellpadding="15" cellspacing="0" align="center"
+								bgcolor="">
+								<tr>
+									<td width="30%">
+										
+										<font face="Verdana" size="4" color="white">
+											Name:-
+										</font>
+									</td>
+									<td width="70%">
+										<font face="Verdana" size="4" color="">
+											<input type="text" size="40">
+										</font>
+									</td>
+								</tr>
+								<tr>
+									<td width="30%">
+										<font face="Verdana" size="4" color="white">
+											Email:-
+										</font>
+									</td>
+									<td width="70%">
+										<font face="Verdana" size="4" color="white">
+											<input type="email" size="40">
+										</font>
+									</td>
+								</tr>
+								<tr>
+									<td width="30%">
+										<font face="Verdana" size="4" color="white">
+											Number:-
+										</font>
+									</td>
+									<td width="70%">
+										<font face="Verdana" size="4" color="white">
+											<input type="number" size="12">
+										</font>
+									</td>
+								</tr>
+								<tr>
+									<td width="30%">
+										<font face="Verdana" size="4" color="white">
+											Message:-
+										</font>
+									</td>
+									<td width="70%">
+										<font face="Verdana" size="4" color="white">
+											<textarea rows="5" cols="37">
+											</textarea>
+										</font>
+									</td>
+								</tr>
+								<tr>
+									<td width="30%">
+
+									</td>
+									<td width="70%">
+										<button type="Submit">
+											<font face="Verdana" size="4" color="white">
+												<input type="submit">
+											</font>
+										</button>
+										<hr color="gray">
+										
+									</td>
+								</tr>
+							</table>
+						</td>
+
+					</tr>
+					<tr>
+						<td colspan="2">
+
+
+						</td>
+					</tr>
+				</table>
+			</td>
+		</tr>
+	</table>
+	<!--Contact(end)-->
+
+
+	<!--Footer1(start)-->
+	<table id="footer" border="2" width="100%" cellpadding="0" cellspacing="0" bgcolor="white">
+		<tr>
+			<td>
+				<table border="0" cellpadding="15" cellspacing="0" width="90%" align="center">
+					<tr>
+						<td width="13%" valign="top">
+							<b>LinkedIn</b>
+							<a href="#" style="text-decoration:none">
+								➲
+							</a>
+						</td>
+
+						<td>
+							|
+						</td>
+
+						<td width="13%" valign="top">
+							<b>GitHub </b>
+							<a href="#"  style="text-decoration:none">
+								➲
+							</a>
+						</td>
+
+						<td>
+							|
+						</td>
+
+						<td width="13%" valign="top">
+							<b>HackerRank</b>
+							<a href="#"  style="text-decoration:none">
+								➲
+							</a>
+						</td>
+
+						<td>
+							|
+						</td>
+
+						
+
+						<td>
+							|
+						</td>
+
+						<td width="13%" valign="top">
+							<b>Twitter</b>
+							<a href="#" style="text-decoration:none">
+								➲
+							</a>
+						</td>
+
+						<td>
+							|
+						</td>
+
+						<td width="13%" valign="top">
+							<b>Instagram</b>
+							<a href="#" style="text-decoration:none">
+								➲
+							</a>
+						</td>
+
+						<td>
+							|
+						</td>
+
+						<td width="13%" valign="top">
+							<b>Email</b>
+							<a href="" style="text-decoration:none">
+								➲
+							</a>
+						</td>
+
+						<td>
+							|
+						</td>
+
+						<td width="13%" valign="top">
+							<b>Website</b>
+							<a href="#" style="text-decoration:none">
+								➲
+							</a>
+						</td>
+					</tr>
+				</table>
+			</td>
+		</tr>
+	</table>
+	<!--Footer1(end)-->
+
+
+	<!--Footer2(start)-->
+	<table id="footer" border="2" width="100%" cellpadding="0" cellspacing="0" bgcolor="">
+		<tr>
+			<td>
+				<table border="0" cellpadding="15" cellspacing="0" width="90%" align="center">
+					<tr>
+						<td width="80%" valign="top">
+							<font face="Verdana" color="white" size="5">
+								©Copyright 2023 by Spoorthi.
+								All rights reserved.
+							</font>
+						</td>
+
+						<td width="10%">
+							<font face="arial" color="white" size="3">
+								<a href="#header" style="text-decoration:none">
+									<font face="Verdana" color="white" size="5">
+										<b>TOP</b>
+									</font>
+								</a>
+							</font>
+						</td>
+					</tr>
+				</table>
+			</td>
+		</tr>
+	</table>
+	<!--Footer2(end)-->
+
+</body>
+
+</html>
